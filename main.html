@@ -44,7 +44,7 @@
                         </p>
                     </div>
                     <div>
-                        <p><img src="logo.png" alt="logo" style="width: 120px; height: auto; margin-left: auto; margin-right: auto;"></p>
+                        <p></p><img src="logo.png" alt="logo" style="width: 150px; height: auto; margin-left: auto; margin-right: auto;"></p>
                     </div>
                 </div>
                 
@@ -102,7 +102,7 @@
             <div class="res-modal-content res-animate-zoom">
                 <div class="res-container res-black">
                     <span onclick="document.getElementById('reservation').style.display='none'" class="res-button-close res-display-topright res-large"><i class="material-icons">close</i></span>
-                    <h1 class="center1">Make a reservation</h1>
+                    <h1 class="center1"><span class="txt anim-text-flow">Make a Reservation</span></h1>
                 </div>
                 <div class="res-container">
                     <p><strong>Reserve a table</strong></p>
@@ -111,7 +111,10 @@
                         <p><input class="res-input res-padding-16 res-border" type="number" placeholder="How many people" required name="People" min="1" max="10"></p>
                         <p><input class="res-input res-padding-16 res-border" type="datetime-local" required name="date" value="2020-12-01T08:00" min="2020-12-01T08:00" max="2021-01-01T22:00"></p>
                         <p><input class="res-input res-padding-16 res-border" type="text" placeholder="Any special requirements" required name="Message"></p>
-                        <p><button class="res-button-close1" type="submit">Reserve</button></p>
+                        <p>
+                            <button style="float: right;" class="res-button-close1" type="submit">Reserve</button>
+                            <button class="res-button-close1" type="reset">Reset</button>
+                        </p>
                     </form>
                 </div>
             </div>
@@ -122,7 +125,7 @@
             <div class="res-modal-content res-animate-zoom">
                 <div class="res-container res-black">
                     <span onclick="document.getElementById('contact').style.display='none'" class="res-button-close res-display-topright res-large"><i class="material-icons">close</i></span>
-                    <h1 class="center1">Contact Us</h1>
+                    <h1 class="center1"><span class="txt anim-text-flow">Contact Us</span></h1>
                 </div>
                 <div class="res-container center1">
                     <button class="button1-facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></button>
@@ -140,15 +143,18 @@
             <div class="res-modal-content res-animate-zoom">
                 <div class="res-container res-black">
                     <span onclick="document.getElementById('feedback').style.display='none'" class="res-button-close res-display-topright res-large"><i class="material-icons">close</i></span>
-                    <h1 class="center1">Feedback</h1>
+                    <h1 class="center1"><span class="txt anim-text-flow">Feedback</span></h1>
                 </div>
                 <div class="res-container">
-                    <p><strong>Give us your valuable feedback</strong></p>
+                    <p><strong>Leave us a comment</strong></p>
                     <form action="/action_page.php" target="_blank">
                         <p><input class="res-input res-padding-16 res-border" type="text" placeholder="Name" required name="Name"></p>
                         <p><input class="res-input res-padding-16 res-border" type="text" placeholder="E-Mail" required name="E-Mail"></p>
                         <p><input class="res-input res-padding-16 res-border" type="textarea" placeholder="Message" required name="Message"></p>
-                        <p><button class="res-button-close1" type="submit">SEND</button></p>
+                        <p>
+                            <button style="float: right;" class="res-button-close1" type="submit">SEND</button>
+                            <button class="res-button-close1" type="reset">Reset</button>
+                        </p>
                     </form>
                 </div>
             </div>
@@ -198,9 +204,18 @@
                     <span onclick="document.getElementById('nvegs').style.display='none'" class="res-button-close res-display-topright res-large"><i class="material-icons">close</i></span>
                     <h1 class="center1"><span class="txt anim-text-flow">Non-Veg Soups</span></h1>
                 </div>
-                <div class="res-container">
+                <div class="res-container"> 
+                    <br>
                     <table>
                         <tbody>
+                            <tr>
+                                <th>
+                                    <b>Name</b>
+                                </th>
+                                <th>
+                                    <b>Price</b>
+                                </th>
+                            </tr>
                             <tr>
                                 <td>
                                     <b>Chicken corn</b>
@@ -296,8 +311,17 @@
                     <h1 class="center1"><span class="txt anim-text-flow">Veg Soups</span></h1>
                 </div>
                 <div class="res-container">
+                    <br>
                     <table>
-                        <tbody class="res-table">
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <b>Name</b>
+                                </th>
+                                <th>
+                                    <b>Price</b>
+                                </th>
+                            </tr>
                             <tr>
                                 <td>
                                     <b>Farmer&rsquo;s market vegetable soup</b>
@@ -411,8 +435,17 @@
                     <h1 class="center1"><span class="txt anim-text-flow">Non-Veg Kababs</span></h1>
                 </div>
                 <div class="res-container">
+                    <br>
                     <table>
                         <tbody>
+                            <tr>
+                                <th>
+                                    <b>Name</b>
+                                </th>
+                                <th>
+                                    <b>Price</b>
+                                </th>
+                            </tr>
                             <tr>
                                 <td>
                                     <b>Chicken hariyali</b>
@@ -508,8 +541,17 @@
                     <h1 class="center1"><span class="txt anim-text-flow">Veg Kababs</span></h1>
                 </div>
                 <div class="res-container">
+                    <br>
                     <table>
                         <tbody>
+                            <tr>
+                                <th>
+                                    <b>Name</b>
+                                </th>
+                                <th>
+                                    <b>Price</b>
+                                </th>
+                            </tr>
                             <tr>
                                 <td>
                                     <b>Dahi ke kabab</b>
@@ -626,8 +668,17 @@
                     <h1 class="center1"><span class="txt anim-text-flow">Indian Breads</span></h1>
                 </div>
                 <div class="res-container">
+                    <br>
                     <table>
                         <tbody>
+                            <tr>
+                                <th>
+                                    <b>Name</b>
+                                </th>
+                                <th>
+                                    <b>Price</b>
+                                </th>
+                            </tr>
                             <tr>
                                 <td>
                                     <b>Plain Roti</b>
@@ -763,8 +814,17 @@
                     <h1 class="center1"><span class="txt anim-text-flow">Rice</span></h1>
                 </div>
                 <div class="res-container">
+                    <br>
                     <table>
                         <tbody>
+                            <tr>
+                                <th>
+                                    <b>Name</b>
+                                </th>
+                                <th>
+                                    <b>Price</b>
+                                </th>
+                            </tr>
                             <tr>
                                 <td>
                                     <b>Normal rice</b>
@@ -876,8 +936,17 @@
                     <h1 class="center1"><span class="txt anim-text-flow">Pulao</span></h1>
                 </div>
                 <div class="res-container">
+                    <br>
                     <table>
                         <tbody>
+                            <tr>
+                                <th>
+                                    <b>Name</b>
+                                </th>
+                                <th>
+                                    <b>Price</b>
+                                </th>
+                            </tr>
                             <tr>
                                 <td>
                                     <b>Veg pulao</b>
@@ -981,8 +1050,17 @@
                     <h1 class="center1"><span class="txt anim-text-flow">Biryani</span></h1>
                 </div>
                 <div class="res-container">
+                    <br>
                     <table>
                         <tbody>
+                            <tr>
+                                <th>
+                                    <b>Name</b>
+                                </th>
+                                <th>
+                                    <b>Price</b>
+                                </th>
+                            </tr>
                             <tr>
                                 <td>
                                     <b>Veg</b>
@@ -1151,8 +1229,17 @@
                     <h1 class="center1"><span class="txt anim-text-flow">Non-Veg Curry</span></h1>
                 </div>
                 <div class="res-container">
+                    <br>
                     <table>
                         <tbody>
+                            <tr>
+                                <th>
+                                    <b>Name</b>
+                                </th>
+                                <th>
+                                    <b>Price</b>
+                                </th>
+                            </tr>
                             <tr>
                                 <td>
                                     <b>South Indian egg curry</b>
@@ -1544,8 +1631,17 @@
                     <h1 class="center1"><span class="txt anim-text-flow">Veg Curry</span></h1>
                 </div>
                 <div class="res-container">
+                    <br>
                     <table>
                         <tbody>
+                            <tr>
+                                <th>
+                                    <b>Name</b>
+                                </th>
+                                <th>
+                                    <b>Price</b>
+                                </th>
+                            </tr>
                             <tr>
                                 <td>
                                     <b>Dal makhni</b>
@@ -1908,8 +2004,17 @@
                     <h1 class="center1"><span class="txt anim-text-flow">Indian Desserts</span></h1>
                 </div>
                 <div class="res-container">
+                    <br>
                     <table>
                         <tbody>
+                            <tr>
+                                <th>
+                                    <b>Name</b>
+                                </th>
+                                <th>
+                                    <b>Price</b>
+                                </th>
+                            </tr>
                             <tr>
                                 <td>
                                     <b>Gajrela</b>
@@ -2093,7 +2198,187 @@
                     <h1 class="center1"><span class="txt anim-text-flow">Ice creams</span></h1>
                 </div>
                 <div class="res-container">
-
+                    <br>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <b>Name</b>
+                                </th>
+                                <th>
+                                    <b>Price</b>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Chocolate chips</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Rocky road</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Cookies and cream</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Mint chocolate chip</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Double chocolate</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Butterscotch</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Raspberry ripple</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Choco vanilla</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Neapolitan</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Salted caramel</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Strawberry</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Rum and raisins</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Tutti-frutti</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Coffee</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Pistachio</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Oreo</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Red velvet</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Chocolate and mint</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Cotton candy</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Black currant</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Apple pie</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
@@ -2107,7 +2392,195 @@
                     <h1 class="center1"><span class="txt anim-text-flow">Cakes</span></h1>
                 </div>
                 <div class="res-container">
-
+                    <br>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <b>Name</b>
+                                </th>
+                                <th>
+                                    <b>Price</b>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Chocolate cake</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 200</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Chocolate Oreo cake</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 200</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Dark chocolate cake with butter pecan frosting</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 200</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Chocolate peanut butter cake</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 200</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Chocolate express cake</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 200</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Black Forest</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 200</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>White forest</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 200</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>White chocolate cake</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 200</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Cream cheese Pound cake</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 200</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Strawberry cream cheese Pound cake</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 200</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Cinnamon apple Moonshine cake</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 200</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Carrot cake</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 200</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Almond Pecan Sheet Cake</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 200</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Chocolate Sheet Cake</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 200</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Rocky Road Sheet Cake</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 200</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Texas Turtle Sheet Cake</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 200</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Raspberry Cheesecake Sheet Cake</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 200</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Cheesecake</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 200</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Neapolitan cheesecake</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 200</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Chocolate caramel cheesecake</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 200</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Oreo cheesecake</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 200</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Snickers cheesecake</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 200</b>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table><br>
                 </div>
             </div>
         </div>
@@ -2122,7 +2595,123 @@
                     <h1 class="center1"><span class="txt anim-text-flow">Pastries</span></h1>
                 </div>
                 <div class="res-container">
-
+                    <br>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <b>Name</b>
+                                </th>
+                                <th>
+                                    <b>Price</b>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Chocolate pastry</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 200</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Dark chocolate pastry</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 200</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Mint chocolate pastry</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 200</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Pineapple pastry</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 200</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Blackcurrant pastry</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 200</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Rose Pastry</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 200</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Apple cinnamon Pastry</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 200</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Strawberry pastry</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 200</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Mango vanilla pastry</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 200</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>White Forest Pastry</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 200</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Black forest pastry</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 200</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Coffee mocha pastry</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 200</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Fresh fruit pastry</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 200</b>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table><br>
                 </div>
             </div>
         </div>
@@ -2136,7 +2725,7 @@
                     <h1 class="center1"><span class="txt anim-text-flow">Drinks</span></h1><br><br><br>
                 </div>
                 <div class="res-container res-black res-display-container">
-                    <p>
+                    <p class="center1">
                         <button onclick="document.getElementById('mocktail').style.display='block'; document.getElementById('drink').style.display='none'" class="res-button res-black"><span class="txt anim-text-flow">Mocktail</span></button>
                         <button onclick="document.getElementById('mojito').style.display='block'; document.getElementById('drink').style.display='none'" class="res-button res-black"><span class="txt anim-text-flow">Mojito</span></button>
                         <button onclick="document.getElementById('milkshake').style.display='block'; document.getElementById('drink').style.display='none'" class="res-button res-black"><span class="txt anim-text-flow">Milk Shake</span></button>
@@ -2156,8 +2745,17 @@
                     <h1 class="center1"><span class="txt anim-text-flow">Mocktail</span></h1>
                 </div>
                 <div class="res-container">
+                    <br>
                     <table>
                         <tbody>
+                            <tr>
+                                <th>
+                                    <b>Name</b>
+                                </th>
+                                <th>
+                                    <b>Price</b>
+                                </th>
+                            </tr>
                             <tr>
                                 <td>
                                     <b>Sparkling Berry and pomegranate</b>
@@ -2245,8 +2843,17 @@
                     <h1 class="center1"><span class="txt anim-text-flow">Mojito</span></h1>
                 </div>
                 <div class="res-container">
+                    <br>
                     <table>
                         <tbody>
+                            <tr>
+                                <th>
+                                    <b>Name</b>
+                                </th>
+                                <th>
+                                    <b>Price</b>
+                                </th>
+                            </tr>
                             <tr>
                                 <td>
                                     <b>Classic mint</b>
@@ -2374,8 +2981,17 @@
                     <h1 class="center1"><span class="txt anim-text-flow">Milk Shake</span></h1>
                 </div>
                 <div class="res-container">
+                    <br>
                     <table>
                         <tbody>
+                            <tr>
+                                <th>
+                                    <b>Name</b>
+                                </th>
+                                <th>
+                                    <b>Price</b>
+                                </th>
+                            </tr>
                             <tr>
                                 <td>
                                     <b>
@@ -2739,8 +3355,17 @@
                     <h1 class="center1"><span class="txt anim-text-flow">Tea</span></h1>
                 </div>
                 <div class="res-container">
+                    <br>
                     <table>
                         <tbody>
+                            <tr>
+                                <th>
+                                    <b>Name</b>
+                                </th>
+                                <th>
+                                    <b>Price</b>
+                                </th>
+                            </tr>
                             <tr>
                                 <td>
                                     <b>Assam Black tea</b>
@@ -2868,8 +3493,17 @@
                     <h1 class="center1"><span class="txt anim-text-flow">Coffee</span></h1>
                 </div>
                 <div class="res-container">
+                    <br>
                     <table>
                         <tbody>
+                            <tr>
+                                <th>
+                                    <b>Name</b>
+                                </th>
+                                <th>
+                                    <b>Price</b>
+                                </th>
+                            </tr>
                             <tr>
                                 <td>
                                     <b>Affogato</b>
@@ -3012,6 +3646,984 @@
                                 </td>
                                 <td>
                                     <b>&#8377; 240</b>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table><br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu pizza-->
+        <div id="pizza" class="res-modal">
+            <div class="res-modal-content res-animate-zoom">
+                <div class="res-container res-black res-display-container">
+                    <span onclick="document.getElementById('pizza').style.display='none'; document.getElementById('menu').style.display='block'" class="res-button-close res-display-topleft res-large"><i class="material-icons">arrow_back</i></span>
+                    <span onclick="document.getElementById('pizza').style.display='none'" class="res-button-close res-display-topright res-large"><i class="material-icons">close</i></span>
+                    <h1 class="center1"><span class="txt anim-text-flow">Pizzas</span></h1><br><br><br>
+                </div>
+                <div class="res-container res-black res-display-container">
+                    <p class="center1">
+                        <button onclick="document.getElementById('nvegp').style.display='block'; document.getElementById('pizza').style.display='none'" class="res-button res-black"><span class="txt anim-text-flow">Non Veg</span></button>
+                        <button onclick="document.getElementById('vegp').style.display='block'; document.getElementById('pizza').style.display='none'" class="res-button res-black"><span class="txt anim-text-flow">Veg</span></button>
+                    </p><br><br><br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu pizza nonveg-->
+        <div id="nvegp" class="res-modal">
+            <div class="res-modal-content res-animate-zoom">
+                <div class="res-container res-black res-display-container">
+                    <span onclick="document.getElementById('nvegp').style.display='none'; document.getElementById('pizza').style.display='block'" class="res-button-close res-display-topleft res-large"><i class="material-icons">arrow_back</i></span>
+                    <span onclick="document.getElementById('nvegp').style.display='none'" class="res-button-close res-display-topright res-large"><i class="material-icons">close</i></span>
+                    <h1 class="center1"><span class="txt anim-text-flow">Non veg Pizzas</span></h1>
+                </div>
+                <div class="res-container">
+                    <br>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <b>
+                                        Item
+                                    </b>
+                                </th>
+                                <th colspan="4" class="tb">
+                                    <b>
+                                        Price
+                                    </b>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>
+                                       
+                                    </b>
+                                </td>
+                                <td>
+                                    <b>
+                                        4 slices
+                                    </b>
+                                </td>
+                                <td>
+                                    <b>
+                                        6 slices
+                                    </b>
+                                </td>
+                                <td>
+                                    <b>
+                                        8 slices
+                                    </b>
+                                    <b>
+                                        
+                                    </b>
+                                </td>
+                                <td>
+                                    <b>
+                                        12 slices
+                                    </b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>
+                                        Pepper barbeque chicken
+                                    </b>
+                                </td>
+                                <td>
+                                    <b>
+                                        &#8377; 200
+                                    </b>
+                                </td>
+                                <td>
+                                    <b>
+                                        &#8377; 300
+                                    </b>
+                                </td>
+                                <td>
+                                    <b>
+                                        &#8377; 400
+                                    </b>
+                                </td>
+                                <td>
+                                    <b>
+                                        &#8377; 600
+                                    </b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>
+                                        Chicken sausage
+                                    </b>
+                                </td>
+                                <td>
+                                    <b>
+                                        &#8377; 200
+                                    </b>
+                                </td>
+                                <td>
+                                    <b>
+                                        &#8377; 300
+                                    </b>
+                                </td>
+                                <td>
+                                    <b>
+                                        &#8377; 400
+                                    </b>
+                                </td>
+                                <td>
+                                    <b>
+                                        &#8377; 600
+                                    </b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>
+                                        Chicken golden delight
+                                    </b>
+                                </td>
+                                <td>
+                                    <b>
+                                        &#8377; 200
+                                    </b>
+                                </td>
+                                <td>
+                                    <b>
+                                        &#8377; 300
+                                    </b>
+                                </td>
+                                <td>
+                                    <b>
+                                        &#8377; 400
+                                    </b>
+                                </td>
+                                <td>
+                                    <b>
+                                        &#8377; 600
+                                    </b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>
+                                        Non-veg supreme
+                                    </b>
+                                </td>
+                                <td>
+                                    <b>
+                                        &#8377; 200
+                                    </b>
+                                </td>
+                                <td>
+                                    <b>
+                                        &#8377; 300
+                                    </b>
+                                </td>
+                                <td>
+                                    <b>
+                                        &#8377; 400
+                                    </b>
+                                </td>
+                                <td>
+                                    <b>
+                                        &#8377; 600
+                                    </b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>
+                                        Chicken dominator
+                                    </b>
+                                </td>
+                                <td>
+                                    <b>
+                                        &#8377; 200
+                                    </b>
+                                </td>
+                                <td>
+                                    <b>
+                                        &#8377; 300
+                                    </b>
+                                </td>
+                                <td>
+                                    <b>
+                                        &#8377; 400
+                                    </b>
+                                </td>
+                                <td>
+                                    <b>
+                                        &#8377; 600
+                                    </b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>
+                                        Paper barbeque and Onions
+                                    </b>
+                                </td>
+                                <td>
+                                    <b>
+                                        &#8377; 200
+                                    </b>
+                                </td>
+                                <td>
+                                    <b>
+                                        &#8377; 300
+                                    </b>
+                                </td>
+                                <td>
+                                    <b>
+                                        &#8377; 400
+                                    </b>
+                                </td>
+                                <td>
+                                    <b>
+                                        &#8377; 600
+                                    </b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>
+                                        Chicken fiesta
+                                    </b>
+                                </td>
+                                <td>
+                                    <b>
+                                        &#8377; 200
+                                    </b>
+                                </td>
+                                <td>
+                                    <b>
+                                        &#8377; 300
+                                    </b>
+                                </td>
+                                <td>
+                                    <b>
+                                        &#8377; 400
+                                    </b>
+                                </td>
+                                <td>
+                                    <b>
+                                        &#8377; 600
+                                    </b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>
+                                        Indian chicken tikka
+                                    </b>
+                                </td>
+                                <td>
+                                    <b>
+                                        &#8377; 200
+                                    </b>
+                                </td>
+                                <td>
+                                    <b>
+                                        &#8377; 300
+                                    </b>
+                                </td>
+                                <td>
+                                    <b>
+                                        &#8377; 400
+                                    </b>
+                                </td>
+                                <td>
+                                    <b>
+                                        &#8377; 600
+                                    </b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>
+                                        Kebab pizza
+                                    </b>
+                                </td>
+                                <td>
+                                    <b>
+                                        &#8377; 200
+                                    </b>
+                                </td>
+                                <td>
+                                    <b>
+                                        &#8377; 300
+                                    </b>
+                                </td>
+                                <td>
+                                    <b>
+                                        &#8377; 400
+                                    </b>
+                                </td>
+                                <td>
+                                    <b>
+                                        &#8377; 600
+                                    </b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>
+                                        Greek style pizza
+                                    </b>
+                                </td>
+                                <td>
+                                    <b>
+                                        &#8377; 200
+                                    </b>
+                                </td>
+                                <td>
+                                    <b>
+                                        &#8377; 300
+                                    </b>
+                                </td>
+                                <td>
+                                    <b>
+                                        &#8377; 400
+                                    </b>
+                                </td>
+                                <td>
+                                    <b>
+                                        &#8377; 600
+                                    </b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>
+                                        Burger pizza classic non-veg
+                                    </b>
+                                </td>
+                                <td colspan="4" class="tb">
+                                    <b>
+                                        &#8377; 250
+                                    </b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>
+                                        Burger pizza premium non-veg
+                                    </b>
+                                </td>
+                                <td colspan="4" class="tb">
+                                    <b>
+                                        &#8377; 350
+                                    </b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>
+                                        Bread pizza
+                                    </b>
+                                </td>
+                                <td colspan="4" class="tb">
+                                    <b>
+                                        &#8377; 300
+                                    </b>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table><br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu pizza veg-->
+        <div id="vegp" class="res-modal">
+            <div class="res-modal-content res-animate-zoom">
+                <div class="res-container res-black res-display-container">
+                    <span onclick="document.getElementById('vegp').style.display='none'; document.getElementById('pizza').style.display='block'" class="res-button-close res-display-topleft res-large"><i class="material-icons">arrow_back</i></span>
+                    <span onclick="document.getElementById('vegp').style.display='none'" class="res-button-close res-display-topright res-large"><i class="material-icons">close</i></span>
+                    <h1 class="center1"><span class="txt anim-text-flow">Veg Pizzas</span></h1>
+                </div>
+                <div class="res-container">
+                    <br>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <b>Item</b>
+                                </th>
+                                <th colspan="4" class="tb">
+                                    <b>Price</b>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b></b>
+                                </td>
+                                <td>
+                                    <b>4 slices</b>
+                                </td>
+                                <td>
+                                    <b>6 slices</b>
+                                </td>
+                                <td>
+                                    <b>8 slices</b>
+                                    <b></b>
+                                </td>
+                                <td>
+                                    <b>12 slices</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Margherita</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 225</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 300</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 450</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Double cheese Margherita</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 225</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 300</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 450</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Cheese and tomato</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 225</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 300</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 450</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Veg loaded</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 225</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 300</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 450</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Cheese and onion</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 225</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 300</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 450</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Golden corn</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 225</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 300</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 450</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Paneer and onion</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 225</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 300</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 450</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Loaded cheese</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 225</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 300</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 450</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Cheese and capsicum</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 225</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 300</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 450</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Veggie farmhouse</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 225</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 300</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 450</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Spicy paneer</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 225</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 300</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 450</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Paneer masala</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 225</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 300</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 450</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Mexican green wave</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 225</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 300</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 450</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Deluxe veggie</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 225</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 300</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 450</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Ricotta spinach and garlic</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 225</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 300</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 450</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Spring onion and olive</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 225</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 300</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 450</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Spinach and bean</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 225</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 300</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 450</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Cheese and mushroom</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 225</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 300</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 450</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Cheese and potato</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 225</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 300</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 450</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Cheese and caramelised onion</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 225</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 300</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 450</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Baby corn and sweet corn</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 225</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 300</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 450</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Thai pizza</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 225</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 300</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 450</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Creamy corn</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 225</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 300</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 450</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Double decker pizza</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 225</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 300</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 450</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Pepperoni pizza</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 225</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 300</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 450</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Veg extravaganza</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 225</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 300</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 450</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Cheese and corn</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 225</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 300</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 450</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Paneer makhani</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 225</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 300</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 450</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Veggie paradise</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 225</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 300</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 450</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Fresh veggie</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 225</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 300</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 450</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Indian tandoori paneer</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 150</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 225</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 300</b>
+                                </td>
+                                <td>
+                                    <b>&#8377; 450</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Burger pizza classic veg</b>
+                                </td>
+                                <td colspan="4" class="tb">
+                                    <b>&#8377; 150</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Burger pizza premium veg</b>
+                                </td>
+                                <td colspan="4" class="tb">
+                                    <b>&#8377; 150</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Bread pizza</b>
+                                </td>
+                                <td colspan="4" class="tb">
+                                    <b>&#8377; 150</b>
                                 </td>
                             </tr>
                         </tbody>
