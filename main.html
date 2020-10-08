@@ -44,7 +44,7 @@
                         </p>
                     </div>
                     <div>
-                        <p></p><img src="logo.png" alt="logo" style="width: 150px; height: auto; margin-left: auto; margin-right: auto;"></p>
+                        <p><img src="logo.png" alt="logo" style="width: 150px; height: auto; margin-left: auto; margin-right: auto;"></p>
                     </div>
                 </div>
                 
@@ -54,14 +54,18 @@
             <div class="res-display-topleft res-container res-xlarge">
                 <p>
                     <button onclick="document.getElementById('menu').style.display='block' " class="res-button res-black"><span class="txt anim-text-flow">Menu</span></button>
+                </p>
+                <p>
                     <button onclick="document.getElementById('reservation').style.display='block' " class="res-button res-black"><span class="txt anim-text-flow">Reservation</span></button>
+                </p>
+                <p>
                     <button onclick="document.getElementById('contact').style.display='block' " class="res-button res-black"><span class="txt anim-text-flow">Contact</span></button>
                 </p>
             </div>
 
             <div class="res-display-topright res-container res-xlarge">
                 <p>
-                    <button onclick="window.location.href='About.html'" class="res-button res-black"><span class="txt anim-text-flow">About</span></button>
+                    <button onclick="document.getElementById('about').style.display='block'" class="res-button res-black"><span class="txt anim-text-flow">About</span></button>
                 </p>
             </div>
 
@@ -4628,6 +4632,80 @@
                             </tr>
                         </tbody>
                     </table><br>
+                </div>
+            </div>
+        </div>
+
+        <!--Contact modal-->
+        <div id="about" class="res-modal">
+            <div class="res-modal-content res-animate-zoom">
+                <div class="res-container res-black">
+                    <span onclick="document.getElementById('about').style.display='none'" class="res-button-close res-display-topright res-large"><i class="material-icons">close</i></span>
+                    <h1 class="center1"><span class="txt anim-text-flow">About Us</span></h1>
+                </div>
+                <div class="res-container res-black res-display-container">
+                    <div class="about-section">
+                        <p>Some text about who we are and what we do.</p>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <div class="card">
+                                <p class="center1"><img class="img" src="avatar1.png"></p>
+                                <div class="container">
+                                    <h2>Jane Doe</h2>
+                                    <p class="title">Founder</p>
+                                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                                    <p>
+                                        <button class="button-facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></button>
+                                        <button class="button-whatsapp"><i class="fab fa-whatsapp" aria-hidden="true"></i></button>
+                                        <button class="button-linkedin"><i class="fab fa-linkedin-in" aria-hidden="true"></i></button>
+                                        <button class="button-instagram"><i class="fab fa-instagram" aria-hidden="true"></i></button>
+                                        <button class="button-mail"><i class="far fa-envelope" aria-hidden="true"></i></button>
+                                        <button class="button-twitter"><i class="fab fa-twitter" aria-hidden="true"></i></button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="column">
+                            <div class="card">
+                                <p class="center1"><img class="img" src="avatar2.png"></p>
+                                <div class="container">
+                                    <h2>Mike Ross</h2>
+                                    <p class="title">Head Chef</p>
+                                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                                    <p>
+                                        <button class="button-facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></button>
+                                        <button class="button-whatsapp"><i class="fab fa-whatsapp" aria-hidden="true"></i></button>
+                                        <button class="button-youtube"><i class="fab fa-youtube" aria-hidden="true"></i></button>
+                                        <button class="button-instagram"><i class="fab fa-instagram" aria-hidden="true"></i></button>
+                                        <button class="button-mail"><i class="far fa-envelope" aria-hidden="true"></i></button>
+                                        <button class="button-twitter"><i class="fab fa-twitter" aria-hidden="true"></i></button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="column">
+                            <div class="card">
+                                <p class="center1"><img class="img" src="avatar3.png"></p>
+                                <div class="container">
+                                    <h2>John Doe</h2>
+                                    <p class="title">Manager</p>
+                                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                                    <p>
+                                        <button class="button-facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></button>
+                                        <button class="button-whatsapp"><i class="fab fa-whatsapp" aria-hidden="true"></i></button>
+                                        <button class="button-linkedin"><i class="fab fa-linkedin-in" aria-hidden="true"></i></button>
+                                        <button class="button-instagram"><i class="fab fa-instagram" aria-hidden="true"></i></button>
+                                        <button class="button-mail"><i class="far fa-envelope" aria-hidden="true"></i></button>
+                                        <button class="button-twitter"><i class="fab fa-twitter" aria-hidden="true"></i></button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
                 </div>
             </div>
         </div>
