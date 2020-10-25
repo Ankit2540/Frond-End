@@ -52,25 +52,15 @@
             </div>
 
             <div class="res-display-topleft res-container res-xlarge">
-                <p>
+                <p style="align-content: center; text-align: center; align-items: center; align-self: center;">
                     <button onclick="document.getElementById('menu').style.display='block' " class="res-button res-black"><span class="txt anim-text-flow">Menu</span></button>
-                </p>
-                <p>
+
                     <button onclick="document.getElementById('reservation').style.display='block' " class="res-button res-black"><span class="txt anim-text-flow">Reservation</span></button>
-                </p>
-                <p>
+
                     <button onclick="document.getElementById('contact').style.display='block' " class="res-button res-black"><span class="txt anim-text-flow">Contact</span></button>
-                </p>
-            </div>
 
-            <div class="res-display-topright res-container res-xlarge">
-                <p>
                     <button onclick="document.getElementById('about').style.display='block'" class="res-button res-black"><span class="txt anim-text-flow">About</span></button>
-                </p>
-            </div>
 
-            <div class="res-display-bottomright res-container res-xlarge">
-                <p>
                     <button onclick="document.getElementById('feedback').style.display='block' " class="res-button res-black"><span class="txt anim-text-flow">Feedback</span></button>
                 </p>
             </div>
@@ -112,6 +102,7 @@
                     <p><strong>Reserve a table</strong></p>
                     <form action="/action_page.php" target="_blank">
                         <p><input class="res-input res-padding-16 res-border" type="text" placeholder="Name" required name="Name"></p>
+                        <p><input class="res-input res-padding-16 res-border" type="email" placeholder="E-Mail" required name="E-Mail" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"></p>
                         <p><input class="res-input res-padding-16 res-border" type="number" placeholder="How many people" required name="People" min="1" max="10"></p>
                         <p><input class="res-input res-padding-16 res-border" type="datetime-local" required name="date" value="2020-12-01T08:00" min="2020-12-01T08:00" max="2021-01-01T22:00"></p>
                         <p><input class="res-input res-padding-16 res-border" type="text" placeholder="Any special requirements" required name="Message"></p>
@@ -153,7 +144,7 @@
                     <p><strong>Leave us a comment</strong></p>
                     <form action="/action_page.php" target="_blank">
                         <p><input class="res-input res-padding-16 res-border" type="text" placeholder="Name" required name="Name"></p>
-                        <p><input class="res-input res-padding-16 res-border" type="text" placeholder="E-Mail" required name="E-Mail"></p>
+                        <p><input class="res-input res-padding-16 res-border" type="email" placeholder="E-Mail" required name="E-Mail" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"></p>
                         <p><input class="res-input res-padding-16 res-border" type="textarea" placeholder="Message" required name="Message"></p>
                         <p>
                             <button style="float: right;" class="res-button-close1" type="submit">SEND</button>
@@ -4636,7 +4627,7 @@
             </div>
         </div>
 
-        <!--Contact modal-->
+        <!--About modal-->
         <div id="about" class="res-modal">
             <div class="res-modal-content res-animate-zoom">
                 <div class="res-container res-black">
@@ -4645,7 +4636,10 @@
                 </div>
                 <div class="res-container res-black res-display-container">
                     <div class="about-section">
-                        <p>Some text about who we are and what we do.</p>
+                        <h3 style="text-align:justify;">Since its inception, our restaurant has established a striking presence in the hospitality industry. Offering
+                        an eclectic blend of traditional hospitality and modern conveniences, we take pride in delivering a unique local
+                        experience, as well as an assurance of quality and comfort. Each of our restaurant depicts perfection with respect to the
+                        seamless services and contemporary facilities that we offer to guarantee a hassle-free dinning.</h3>
                     </div>
                     <div class="row">
                         <div class="column">
@@ -4654,7 +4648,6 @@
                                 <div class="container">
                                     <h2>Jane Doe</h2>
                                     <p class="title">Founder</p>
-                                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                                     <p>
                                         <button class="button-facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></button>
                                         <button class="button-whatsapp"><i class="fab fa-whatsapp" aria-hidden="true"></i></button>
@@ -4673,7 +4666,6 @@
                                 <div class="container">
                                     <h2>Mike Ross</h2>
                                     <p class="title">Head Chef</p>
-                                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                                     <p>
                                         <button class="button-facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></button>
                                         <button class="button-whatsapp"><i class="fab fa-whatsapp" aria-hidden="true"></i></button>
@@ -4692,7 +4684,6 @@
                                 <div class="container">
                                     <h2>John Doe</h2>
                                     <p class="title">Manager</p>
-                                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                                     <p>
                                         <button class="button-facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></button>
                                         <button class="button-whatsapp"><i class="fab fa-whatsapp" aria-hidden="true"></i></button>
