@@ -37,7 +37,8 @@ a:hover
 
 button,
 input,
-textarea 
+textarea,
+select
 {
     font: inherit;
     margin: 0
@@ -45,7 +46,8 @@ textarea
 
 
 button,
-input 
+input,
+select 
 {
     overflow: visible
 }
@@ -90,14 +92,19 @@ textarea
     font-weight: bold;
     color: black
 }
+::aria-placeholder
+{
+    font-weight: bold;
+    color: black
+}
 
-input[type=datetime-local]
+input[type=datetime-local], select
 {
     font-weight: bold
 }
 
 
-input
+input, select
 {
     background-color: whitesmoke;
     font-weight: bold;
@@ -355,8 +362,26 @@ td:nth-child(5)
     font-weight: bolder;
 }
 
+.res-button-close2 
+{
+    border-color: white;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    border-radius: 8px;
+    font-weight: bolder;
+}
+
 .res-button-close , 
-.res-button-close1 
+.res-button-close1 ,
+.res-button-close2
 {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -367,7 +392,8 @@ td:nth-child(5)
 }
 
 .res-button-close:disabled , 
-.res-button-close1:disabled
+.res-button-close1:disabled, 
+.res-button-close2:disabled
 {
     cursor: not-allowed;
 }
@@ -378,7 +404,7 @@ td:nth-child(5)
     background-color: #ccc  
 }
 
-.res-button-close1:hover
+.res-button-close1:hover, .res-button-close2:hover
 {
     color: rgb(50, 158, 17);
     background-color: #ccc;
@@ -463,27 +489,15 @@ td:nth-child(5)
 
         .column {
             float: left;
-            width: 33.3%;
+            width: 100%;
+            height: 590px;
             margin-bottom: 16px;
             padding: 0 8px;
             background-color: rgba(0,0,0,0.5);
             color: white;
         }
 
-        .card {
-            box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.8);
-            margin: 8px;
-        }
-
-        .img
-        {
-            width: 90%;
-            margin-top: 12px;
-            border: solid white 2px;
-            box-shadow: 0px 4px 8px 0px rgba(255, 255, 255, 0.8);
-        }
-
-        .about-section 
+        .section 
         {
             padding-top: 5px;
             padding-bottom: 5px;
