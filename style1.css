@@ -404,6 +404,12 @@ td:nth-child(5)
     background-color: #ccc  
 }
 
+.img
+{
+    width: 400px;
+    height: auto;
+}
+
 .res-button-close1:hover, .res-button-close2:hover
 {
     color: rgb(50, 158, 17);
